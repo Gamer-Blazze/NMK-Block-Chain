@@ -12,7 +12,7 @@ app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
 app.use(express.json());
 
 const CHAIN_FILE = process.env.CHAIN_FILE || './mnk_chain.json';
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 4000;
 const JWT_SECRET = process.env.JWT_SECRET || 'dev-secret';
 
 class Transaction {
